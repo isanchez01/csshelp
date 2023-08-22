@@ -1,0 +1,6503 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
+}
+
+.submitButton {
+	background-color: rgb(26,45,60,255); 
+	color: antiquewhite; 
+	padding: 8px;
+	font-size: 20px;
+	border: none;
+	font-family: 'Louis_George_Cafe';
+}
+.submitButton:hover {
+	background-color: rgb(26,100,60,255); 
+}
+.logo {
+    background-image: url(LetsCook_Logo.png);
+    width: 300px; 
+    position:relative; 
+    left: 49px; 
+    top: 104px;
+}
+.frontCover {
+    background-image: url(food20.jpg);
+    height:100%;
+    background-size: cover;
+    background-position: center;
+}
+.aboutLetsCookCover {
+    background-image: url(food2.jpg);
+    height:100%;
+    background-size: cover;
+    background-position: 50% 62%; 
+}
+.allRecipesLookupCover {
+    background-image: url(reading.jpg);
+    height:100%;
+    background-size: cover;
+    background-position: 19% -97px;
+}
+.recipeNameLookupCover {
+    background-image: url(learningCook.jpg);
+    height:100%;
+    background-size: cover;
+    background-position: center;
+}
+.addRecipeCover {
+    background-image: url(writing.jpg);
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    
+}
+@font-face {
+    font-family: Hilton;
+    src: url(Hilton.ttf);
+}
+@font-face {
+    font-family: Louis_George_Cafe;
+    src: url(Louis\ George\ Cafe\ Bold.ttf);
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+h1 {
+    font-size: 40px;
+    position:relative;
+    font-family: Louis_George_Cafe;
+    letter-spacing: 3px;
+    color:antiquewhite;
+}
+
+h2 {
+
+    font-size: 20px;
+    position:relative;
+    font-family: Hilton;
+    letter-spacing: 3px;
+}
+p, form {
+    font-family:Louis_George_Cafe;
+    color: rgb(32,44,60);
+    font-size:28px;
+    position: relative;
+    left:100px;
+    width: 1000px;
+    padding-bottom: 40px;
+}
+.toolbarButton {
+    background: none;
+    font-family: Louis G;
+    font-size:17px;
+    top:-4px;
+    outline:none; 
+    border:none;
+    position: relative;
+    display: inline;
+    color:rgb(243,213,182,255);
+    font-family: Louis_George_Cafe;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+.toolbarButton:hover {
+    background-color: rgb(26,100,60,255);
+    
+}
+
+input[type=text] {
+    position: relative;
+}
+
+label {
+    position: relative;
+    padding-right:20px;
+}
+
+@media screen and (min-width:1349px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 599px;
+    	top: 43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-17px;
+		left:-379px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:18px;
+		left:-717px;
+	}
+	#ingredients {
+		top:15px;
+		left:-692px;
+	}
+	#meal_time_label {
+		top:20px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-17px;
+		left:120px;
+	}
+	#instructions_label {
+		top:19px;
+		left:-249px;
+	}
+	#instructions {
+		top:17px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:105px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:443px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -101px;
+	}
+	#lookupRecipe {
+		left: -104px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -107px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -110px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:24px;
+	}
+	#github {
+		font-size:14px;
+		left:21px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:18px;
+	}
+	#resume {
+		font-size:14px;
+		left:15px;
+	}
+}
+@media screen and (max-width:1348px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 599px;
+    	top: 43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-17px;
+		left:-379px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:18px;
+		left:-717px;
+	}
+	#ingredients {
+		top:15px;
+		left:-692px;
+	}
+	#meal_time_label {
+		top:20px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-17px;
+		left:120px;
+	}
+	#instructions_label {
+		top:19px;
+		left:-249px;
+	}
+	#instructions {
+		top:17px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:105px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:443px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -101px;
+	}
+	#lookupRecipe {
+		left: -104px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -107px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -110px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:24px;
+	}
+	#github {
+		font-size:14px;
+		left:21px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:18px;
+	}
+	#resume {
+		font-size:14px;
+		left:15px;
+	}
+}
+
+@media screen and (max-width:1291px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 585px;
+    	top: 43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-17px;
+		left:-379px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:18px;
+		left:-717px;
+	}
+	#ingredients {
+		top:15px;
+		left:-692px;
+	}
+	#meal_time_label {
+		top:20px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-17px;
+		left:120px;
+	}
+	#instructions_label {
+		top:19px;
+		left:-249px;
+	}
+	#instructions {
+		top:17px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:105px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:443px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -101px;
+	}
+	#lookupRecipe {
+		left: -104px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -107px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -110px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:24px;
+	}
+	#github {
+		font-size:14px;
+		left:21px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:18px;
+	}
+	#resume {
+		font-size:14px;
+		left:15px;
+	}
+}
+
+@media screen and (max-width:1202px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 526px;
+    	top: 43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-17px;
+		left:-379px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:18px;
+		left:-717px;
+	}
+	#ingredients {
+		top:15px;
+		left:-692px;
+	}
+	#meal_time_label {
+		top:20px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-17px;
+		left:120px;
+	}
+	#instructions_label {
+		top:19px;
+		left:-249px;
+	}
+	#instructions {
+		top:17px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:105px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:443px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -101px;
+	}
+	#lookupRecipe {
+		left: -104px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -107px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -110px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:24px;
+	}
+	#github {
+		font-size:14px;
+		left:21px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:18px;
+	}
+	#resume {
+		font-size:14px;
+		left:15px;
+	}
+}
+
+@media screen and (max-width:1102px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 488px;
+    	top: 43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-17px;
+		left:-379px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:18px;
+		left:-717px;
+	}
+	#ingredients {
+		top:15px;
+		left:-692px;
+	}
+	#meal_time_label {
+		top:20px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-17px;
+		left:120px;
+	}
+	#instructions_label {
+		top:19px;
+		left:-249px;
+	}
+	#instructions {
+		top:17px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:105px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:443px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -101px;
+	}
+	#lookupRecipe {
+		left: -104px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -107px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -110px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:24px;
+	}
+	#github {
+		font-size:14px;
+		left:21px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:18px;
+	}
+	#resume {
+		font-size:14px;
+		left:15px;
+	}
+}
+
+@media screen and (max-width:1041px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 436px;
+    	top: 43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-17px;
+		left:-379px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:18px;
+		left:-717px;
+	}
+	#ingredients {
+		top:15px;
+		left:-692px;
+	}
+	#meal_time_label {
+		top:20px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-17px;
+		left:120px;
+	}
+	#instructions_label {
+		top:19px;
+		left:-249px;
+	}
+	#instructions {
+		top:17px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:105px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:443px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -101px;
+	}
+	#lookupRecipe {
+		left: -104px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -107px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -110px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:24px;
+	}
+	#github {
+		font-size:14px;
+		left:21px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:18px;
+	}
+	#resume {
+		font-size:14px;
+		left:15px;
+	}
+}
+
+@media screen and (min-width:965px) and (max-width:970px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 413px;
+    	top: 43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-17px;
+		left:-379px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:18px;
+		left:-717px;
+	}
+	#ingredients {
+		top:15px;
+		left:-692px;
+	}
+	#meal_time_label {
+		top:20px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-17px;
+		left:120px;
+	}
+	#instructions_label {
+		top:19px;
+		left:-249px;
+	}
+	#instructions {
+		top:17px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:105px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:443px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -101px;
+	}
+	#lookupRecipe {
+		left: -104px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -107px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -110px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:24px;
+	}
+	#github {
+		font-size:14px;
+		left:21px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:18px;
+	}
+	#resume {
+		font-size:14px;
+		left:15px;
+	}
+}
+
+@media screen and (min-width:941px) and (max-width:964px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left:401px;
+    	top: 43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:21px;
+		left:-717px;
+	}
+	#ingredients {
+		top:-14px;
+		left:121px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:76px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:443px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -101px;
+	}
+	#lookupRecipe {
+		left: -104px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -107px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -110px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:24px;
+	}
+	#github {
+		font-size:14px;
+		left:21px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:18px;
+	}
+	#resume {
+		font-size:14px;
+		left:15px;
+	}
+}
+
+@media screen and (max-width:940px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 389px;
+    	top: 43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:21px;
+		left:-717px;
+	}
+	#ingredients {
+		top:-14px;
+		left:121px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:76px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:443px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -101px;
+	}
+	#lookupRecipe {
+		left: -104px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -107px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -110px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:24px;
+	}
+	#github {
+		font-size:14px;
+		left:21px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:18px;
+	}
+	#resume {
+		font-size:14px;
+		left:15px;
+	}
+}
+
+@media screen and (max-width:902px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 389px;
+    	top: 43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:21px;
+		left:-717px;
+	}
+	#ingredients {
+		top:-14px;
+		left:121px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:76px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:443px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -101px;
+	}
+	#lookupRecipe {
+		left: -104px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -107px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -110px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:24px;
+	}
+	#github {
+		font-size:14px;
+		left:21px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:18px;
+	}
+	#resume {
+		font-size:14px;
+		left:15px;
+	}
+}
+
+@media screen and (min-width:832px) and (max-width: 901px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 353px;
+    	top: 43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:21px;
+		left:-717px;
+	}
+	#ingredients {
+		top:-14px;
+		left:121px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:76px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:443px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -101px;
+	}
+	#lookupRecipe {
+		left: -104px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -107px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -110px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:24px;
+	}
+	#github {
+		font-size:14px;
+		left:21px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:18px;
+	}
+	#resume {
+		font-size:14px;
+		left:15px;
+	}
+}
+
+@media screen and (max-width:831px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 350px;
+    	top: 43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:21px;
+		left:-717px;
+	}
+	#ingredients {
+		top:-14px;
+		left:121px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:76px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:423px;
+	}
+	#addRecipe {
+		font-size:12px;
+		left: -60px;
+	}
+	#lookupRecipe {
+		font-size:12px;
+		left: -70px;
+	}
+	#getAllRecipes {
+		font-size:12px;
+		left: -80px;
+	}
+	#aboutLetsCook {
+		font-size:12px;
+		left: -90px;
+	}
+	#aboutMe {
+		font-size:12px;
+		left:80px;
+	}
+	#github {
+		font-size:12px;
+		left:70px;
+	}
+	#linkedin {
+		font-size:12px;
+		left:60px;
+	}
+	#resume {
+		font-size:12px;
+		left:50px;
+	}
+}
+
+@media screen and (min-width:805px) and (max-width: 830px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 343px;
+    	top:43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:21px;
+		left:-717px;
+	}
+	#ingredients {
+		top:-14px;
+		left:121px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:76px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:400px;
+	}
+	#addRecipe {
+		font-size:12px;
+		left: -81px;
+	}
+	#lookupRecipe {
+		font-size:12px;
+		left: -84px;
+	}
+	#getAllRecipes {
+		font-size:12px;
+		left: -87px;
+	}
+	#aboutLetsCook {
+		font-size:12px;
+		left: -90px;
+	}
+	#aboutMe {
+		font-size:12px;
+		left:34px;
+	}
+	#github {
+		font-size:12px;
+		left:31px;
+	}
+	#linkedin {
+		font-size:12px;
+		left:28px;
+	}
+	#resume {
+		font-size:12px;
+		left:25px;
+	}
+}
+
+@media screen and (min-width:796px) and (max-width: 804px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 342px;
+    	top:44px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:-10px;
+		left:-82px;
+	}
+	#ingredients {
+		top:-14px;
+		left:-57px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:76px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:400px;
+	}
+	#addRecipe {
+		font-size:12px;
+		left: -81px;
+	}
+	#lookupRecipe {
+		font-size:12px;
+		left: -84px;
+	}
+	#getAllRecipes {
+		font-size:12px;
+		left: -87px;
+	}
+	#aboutLetsCook {
+		font-size:12px;
+		left: -90px;
+	}
+	#aboutMe {
+		font-size:12px;
+		left:34px;
+	}
+	#github {
+		font-size:12px;
+		left:31px;
+	}
+	#linkedin {
+		font-size:12px;
+		left:28px;
+	}
+	#resume {
+		font-size:12px;
+		left:25px;
+	}
+}
+@media screen and (min-width: 764px) and (max-width: 795px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 317px;
+    	top:43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:-10px;
+		left:-82px;
+	}
+	#ingredients {
+		top:-14px;
+		left:-58px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:76px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:400px;
+	}
+	#addRecipe {
+		font-size:12px;
+		left: -81px;
+	}
+	#lookupRecipe {
+		font-size:12px;
+		left: -84px;
+	}
+	#getAllRecipes {
+		font-size:12px;
+		left: -87px;
+	}
+	#aboutLetsCook {
+		font-size:12px;
+		left: -90px;
+	}
+	#aboutMe {
+		font-size:12px;
+		left:34px;
+	}
+	#github {
+		font-size:12px;
+		left:31px;
+	}
+	#linkedin {
+		font-size:12px;
+		left:28px;
+	}
+	#resume {
+		font-size:12px;
+		left:25px;
+	}
+}
+
+@media screen and (min-width:749px) and (max-width:763px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:9px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 305px;
+    	top:43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:-10px;
+		left:-82px;
+	}
+	#ingredients {
+		top:-14px;
+		left:-58px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:76px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:370px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -81px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -84px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -87px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -90px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:26px;
+	}
+	#github {
+		font-size:11px;
+		left:23px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:20px;
+	}
+	#resume {
+		font-size:11px;
+		left:17px;
+	}
+}
+
+@media screen and (max-width:748px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:9px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 302px;
+    	top:43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:-10px;
+		left:-82px;
+	}
+	#ingredients {
+		top:-14px;
+		left:-58px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:76px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:370px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -81px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -84px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -87px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -90px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:26px;
+	}
+	#github {
+		font-size:11px;
+		left:23px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:20px;
+	}
+	#resume {
+		font-size:11px;
+		left:17px;
+	}
+}
+
+@media screen and (min-width:702px) and (max-width:747px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:9px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 304px;
+    	top:43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:-10px;
+		left:-82px;
+	}
+	#ingredients {
+		top:-14px;
+		left:-58px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:76px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:370px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -81px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -84px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -87px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -90px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:26px;
+	}
+	#github {
+		font-size:11px;
+		left:23px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:20px;
+	}
+	#resume {
+		font-size:11px;
+		left:17px;
+	}
+}
+
+@media screen and (max-width:698px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 274px;
+    	top:43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-20px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:-10px;
+		left:-82px;
+	}
+	#ingredients {
+		top:-14px;
+		left:-58px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:76px;
+		left:-360px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:322px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:2px;
+	}
+	#github {
+		font-size:11px;
+		left:-3px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-8px;
+	}
+	#resume {
+		font-size:11px;
+		left:-13px;
+	}
+}
+
+@media screen and (max-width:645px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 311px;
+    	top:43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-17px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:-10px;
+		left:-81px;
+	}
+	#ingredients {
+		top:-13px;
+		left:-57px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:73px;
+		left:-361px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:322px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:2px;
+	}
+	#github {
+		font-size:11px;
+		left:-3px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-8px;
+	}
+	#resume {
+		font-size:11px;
+		left:-13px;
+	}
+}
+
+@media screen and (min-width:628px) and (max-width:645px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 240px;
+    	top:43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-17px;
+		left:-354px;
+	}
+	#ingredients_label {
+		top:-10px;
+		left:-81px;
+	}
+	#ingredients {
+		top:-13px;
+		left:-57px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:73px;
+		left:-361px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:322px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:2px;
+	}
+	#github {
+		font-size:11px;
+		left:-3px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-8px;
+	}
+	#resume {
+		font-size:11px;
+		left:-13px;
+	}
+}
+
+@media screen and (min-width:603px) and (max-width:627px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 217px;
+    	top:43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-50px;
+		left:120px;
+	}
+	#ingredients_label {
+		top:-10px;
+		left:-241px;
+	}
+	#ingredients {
+		top:-14px;
+		left:-217px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-42px;
+		left:120px;
+	}
+	#instructions_label {
+		top:0px;
+		left:-249px;
+	}
+	#instructions {
+		top:-4px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:73px;
+		left:-363px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:322px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:2px;
+	}
+	#github {
+		font-size:11px;
+		left:-3px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-8px;
+	}
+	#resume {
+		font-size:11px;
+		left:-13px;
+	}
+}
+
+@media screen and (min-width:598px) and (max-width:602px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 211px;
+    	top:43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-50px;
+		left:120px;
+	}
+	#ingredients_label {
+		top:-10px;
+		left:-241px;
+	}
+	#ingredients {
+		top:-14px;
+		left:-217px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:41px;
+		left:141px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:322px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:2px;
+	}
+	#github {
+		font-size:11px;
+		left:-3px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-8px;
+	}
+	#resume {
+		font-size:11px;
+		left:-13px;
+	}
+}
+
+@media screen and (max-width:597px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 211px;
+    	top:43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-77px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-54px;
+	}
+	#calories_label {
+		top:-14px;
+		left:-378px;
+	}
+	#calories {
+		top:-50px;
+		left:120px;
+	}
+	#ingredients_label {
+		top:-10px;
+		left:-241px;
+	}
+	#ingredients {
+		top:-14px;
+		left:-217px;
+	}
+	#meal_time_label {
+		top:-6px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-41px;
+		left:120px;
+	}
+	#instructions_label {
+		top:1px;
+		left:-249px;
+	}
+	#instructions {
+		top:-3px;
+		left:-225px;
+	}
+	#addDishButton {
+		top:41px;
+		left:141px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:322px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:2px;
+	}
+	#github {
+		font-size:11px;
+		left:-3px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-8px;
+	}
+	#resume {
+		font-size:11px;
+		left:-13px;
+	}
+}
+
+@media screen and (min-width:498px) and (max-width:537px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 144px;
+    	top:-43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-67px;
+		top:18px;
+	}
+	#dish_name {
+		top:14px;
+		left:-13px;
+	}
+	#calories_label {
+		top:52px;
+		left:-368px;
+	}
+	#calories {
+		top:15px;
+		left:161px;
+	}
+	#ingredients_label {
+		top:50px;
+		left:-230px;
+	}
+	#ingredients {
+		top:48px;
+		left:-176px;
+	}
+	#meal_time_label {
+		top:53px;
+		left:-82px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:18px;
+		left:161px;
+	}
+	#instructions_label {
+		top:55px;
+		left:-237px;
+	}
+	#instructions {
+		top:51px;
+		left:-184px;
+	}
+	#addDishButton {
+		top:96px;
+		left:73px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:322px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:5px;
+	}
+	#github {
+		font-size:11px;
+		left:2px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-1px;
+	}
+	#resume {
+		font-size:11px;
+		left:-13px;
+	}
+}
+
+@media screen and (min-width:491px) and (max-width:497px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 141px;
+    	top:-43px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-67px;
+		top:18px;
+	}
+	#dish_name {
+		top:14px;
+		left:-13px;
+	}
+	#calories_label {
+		top:52px;
+		left:-368px;
+	}
+	#calories {
+		top:15px;
+		left:161px;
+	}
+	#ingredients_label {
+		top:50px;
+		left:-230px;
+	}
+	#ingredients {
+		top:48px;
+		left:-176px;
+	}
+	#meal_time_label {
+		top:53px;
+		left:-82px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:18px;
+		left:161px;
+	}
+	#instructions_label {
+		top:55px;
+		left:-237px;
+	}
+	#instructions {
+		top:18px;
+		left:161px;
+	}
+	#addDishButton {
+		top:96px;
+		left:-88px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:325px;
+		top:2px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:8px;
+	}
+	#github {
+		font-size:11px;
+		left:5px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:2px;
+	}
+	#resume {
+		font-size:11px;
+		left:-2px;
+	}
+}
+
+@media screen and (min-width:485px) and (max-width:490px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 128px;
+    	top:-46px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-67px;
+		top:18px;
+	}
+	#dish_name {
+		top:14px;
+		left:-13px;
+	}
+	#calories_label {
+		top:52px;
+		left:-368px;
+	}
+	#calories {
+		top:15px;
+		left:161px;
+	}
+	#ingredients_label {
+		top:50px;
+		left:-230px;
+	}
+	#ingredients {
+		top:16px;
+		left:161px;
+	}
+	#meal_time_label {
+		top:21px;
+		left:-82px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-14px;
+		left:161px;
+	}
+	#instructions_label {
+		top:23px;
+		left:-237px;
+	}
+	#instructions {
+		top:-14px;
+		left:161px;
+	}
+	#addDishButton {
+		top:63px;
+		left:20px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:325px;
+		top:2px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:8px;
+	}
+	#github {
+		font-size:11px;
+		left:5px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:2px;
+	}
+	#resume {
+		font-size:11px;
+		left:-2px;
+	}
+}
+
+@media screen and (max-width:484px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 128px;
+    	top:-46px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-67px;
+		top:18px;
+	}
+	#dish_name {
+		top:14px;
+		left:-13px;
+	}
+	#calories_label {
+		top:52px;
+		left:-368px;
+	}
+	#calories {
+		top:15px;
+		left:161px;
+	}
+	#ingredients_label {
+		top:50px;
+		left:-230px;
+	}
+	#ingredients {
+		top:16px;
+		left:161px;
+	}
+	#meal_time_label {
+		top:21px;
+		left:-82px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-14px;
+		left:161px;
+	}
+	#instructions_label {
+		top:23px;
+		left:-237px;
+	}
+	#instructions {
+		top:-14px;
+		left:161px;
+	}
+	#addDishButton {
+		top:63px;
+		left:20px;
+		position:relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:325px;
+		top:2px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:8px;
+	}
+	#github {
+		font-size:11px;
+		left:5px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:2px;
+	}
+	#resume {
+		font-size:11px;
+		left:-2px;
+	}
+}
+
+@media screen and (max-width:468px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 150px;
+    	top: -45px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-84px;
+		top:20px;
+	}
+	#dish_name {
+		top:17px;
+		left:-43px;
+	}
+	#calories_label {
+		top:57px;
+		left:-385px;
+	}
+	#calories {
+		top:21px;
+		left:131px;
+	}
+	#ingredients_label {
+		top:57px;
+		left:-248px;
+	}
+	#ingredients {
+		top:22px;
+		left:131px;
+	}
+	#meal_time_label {
+		top: 24px;
+    	left: -96px;
+   		display: inherit;
+	}
+	#addDish_mealtime {
+		top: -11px;
+    	left: 131px;
+	}
+	#instructions_label {
+		top: 20px;
+    	left: -250px;
+	}
+	#instructions {
+		top: -14px;
+    	left: 131px;
+	}
+	#addDishButton {
+		top: 71px;
+    	left: -91px;
+    	position: relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:325px;
+		top:2px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:8px;
+	}
+	#github {
+		font-size:11px;
+		left:5px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:2px;
+	}
+	#resume {
+		font-size:11px;
+		left:-2px;
+	}
+}
+
+@media screen and (min-width:435px) and (max-width:467px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 150px;
+    	top: -46px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-84px;
+		top:5px;
+	}
+	#dish_name {
+		top:2px;
+		left:-87px;
+	}
+	#calories_label {
+		top:6px;
+		left:-49px;
+	}
+	#calories {
+		top:4px;
+		left:-53px;
+	}
+	#ingredients_label {
+		top:8px;
+		left:-84px;
+	}
+	#ingredients {
+		top:5px;
+		left:-89px;
+	}
+	#meal_time_label {
+		top:12px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-23px;
+		left:88px;
+	}
+	#instructions_label {
+		top:14px;
+		left:-249px;
+	}
+	#instructions {
+		top: -22px;
+    	left: 90px;	
+	}
+	#addDishButton {
+		top: 73px;
+    	left: -65px;
+    	position: relative;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:325px;
+		top:2px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:8px;
+	}
+	#github {
+		font-size:11px;
+		left:5px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:2px;
+	}
+	#resume {
+		font-size:11px;
+		left:-2px;
+	}
+}
+
+@media screen and (max-width:434px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:antiquewhite;
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 150px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-84px;
+		top:5px;
+	}
+	#dish_name {
+		top:2px;
+		left:-87px;
+	}
+	#calories_label {
+		top:6px;
+		left:-49px;
+	}
+	#calories {
+		top:4px;
+		left:-53px;
+	}
+	#ingredients_label {
+		top:8px;
+		left:-84px;
+	}
+	#ingredients {
+		top:5px;
+		left:-89px;
+	}
+	#meal_time_label {
+		top:12px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-23px;
+		left:88px;
+	}
+	#instructions_label {
+		top:14px;
+		left:-249px;
+	}
+	#instructions {
+		top: -22px;
+    	left: 90px;	
+	}
+	#addDishButton {
+		top: 73px;
+    	left: -65px;
+    	position: relative;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:325px;
+		top:2px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:8px;
+	}
+	#github {
+		font-size:11px;
+		left:5px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:2px;
+	}
+	#resume {
+		font-size:11px;
+		left:-2px;
+	}
+}
+
+@media screen and (max-width:432px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:antiquewhite;
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 136px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-84px;
+		top:5px;
+	}
+	#dish_name {
+		top:2px;
+		left:-87px;
+	}
+	#calories_label {
+		top:6px;
+		left:-49px;
+	}
+	#calories {
+		top:4px;
+		left:-53px;
+	}
+	#ingredients_label {
+		top:8px;
+		left:-84px;
+	}
+	#ingredients {
+		top:5px;
+		left:-89px;
+	}
+	#meal_time_label {
+		top:12px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-23px;
+		left:88px;
+	}
+	#instructions_label {
+		top:14px;
+		left:-249px;
+	}
+	#instructions {
+		top: -22px;
+    	left: 90px;	
+	}
+	#addDishButton {
+		top: 73px;
+    	left: -65px;
+    	position: relative;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 273px;
+		top: 18px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: -68px;
+	}
+	#github {
+		font-size:11px;
+		left: -69px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -70px;
+	}
+	#resume {
+		font-size:11px;
+		left: -71px;
+	}
+}
+
+@media screen and (max-width:388px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 105px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-84px;
+		top:5px;
+	}
+	#dish_name {
+		top:2px;
+		left:-87px;
+	}
+	#calories_label {
+		top:6px;
+		left:-49px;
+	}
+	#calories {
+		top:4px;
+		left:-53px;
+	}
+	#ingredients_label {
+		top:8px;
+		left:-84px;
+	}
+	#ingredients {
+		top:5px;
+		left:-89px;
+	}
+	#meal_time_label {
+		top:12px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-23px;
+		left:88px;
+	}
+	#instructions_label {
+		top:14px;
+		left:-249px;
+	}
+	#instructions {
+		top: -22px;
+    	left: 90px;	
+	}
+	#addDishButton {
+		top: 73px;
+    	left: -65px;
+    	position: relative;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 253px;
+		top: 18px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: -68px;
+	}
+	#github {
+		font-size:11px;
+		left: -69px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -70px;
+	}
+	#resume {
+		font-size:11px;
+		left: -71px;
+	}
+}
+
+@media screen and (max-width:372px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 105px;
+    	top: -47px;
+    	padding-bottom: 40px;
+    	width: 100%;
+	}
+	#dish_name_label {
+		left:-84px;
+		top:5px;
+	}
+	#dish_name {
+		top:2px;
+		left:-87px;
+	}
+	#calories_label {
+		top:6px;
+		left:-49px;
+	}
+	#calories {
+		top:4px;
+		left:-53px;
+	}
+	#ingredients_label {
+		top:8px;
+		left:-84px;
+	}
+	#ingredients {
+		top:5px;
+		left:-89px;
+	}
+	#meal_time_label {
+		top:12px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-23px;
+		left:89px;
+	}
+	#instructions_label {
+		top:14px;
+		left:-249px;
+	}
+	#instructions {
+		top: -22px;
+    	left: 90px;	
+	}
+	#addDishButton {
+		top: 73px;
+    	left: -65px;
+    	position: relative;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 253px;
+		top: 18px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: -68px;
+	}
+	#github {
+		font-size:11px;
+		left: -69px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -70px;
+	}
+	#resume {
+		font-size:11px;
+		left: -71px;
+	}
+}
+@media screen and (max-width:363px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:0px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		top:-40px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 105px;
+    	top: -12px;
+    	padding-bottom: 40px;
+    	width: 100%;
+	}
+	#dish_name_label {
+		left:-83px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-98px;
+	}
+	#calories_label {
+		top:-48px;
+		left:-83px;
+	}
+	#calories {
+		top:-51px;
+		left:-65px;
+	}
+	#ingredients_label {
+		top:-40px;
+		left:-84px;
+	}
+	#ingredients {
+		top:-44px;
+		left:-101px;
+	}
+	#meal_time_label {
+		top:-35px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-71px;
+		left:77px;
+	}
+	#instructions_label {
+		top:-32px;
+		left:-249px;
+	}
+	#instructions {
+		top:-69px;
+		left:76px;
+	}
+	#addDishButton {
+		top:22px;
+		left:-65px;
+		position:relative;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 220px;
+		top: 31px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: 155px;
+		top: -36px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: 161px;
+		top:-35px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: 133px;
+		top: -33px;
+	}
+	#github {
+		font-size:11px;
+		left: -169px;
+		top: -4px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -163px;
+		top: -4px;
+	}
+	#resume {
+		font-size:11px;
+		left: -156px;
+		top: -4px;
+	}
+}
+
+@media screen and (min-width:357px) and (max-width:363px){
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 105px;
+    	top: -12px;
+    	padding-bottom: 40px;
+    	width: 100%;
+	}
+	#dish_name_label {
+		left:-83px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-98px;
+	}
+	#calories_label {
+		top:-48px;
+		left:-83px;
+	}
+	#calories {
+		top:-51px;
+		left:-65px;
+	}
+	#ingredients_label {
+		top:-40px;
+		left:-84px;
+	}
+	#ingredients {
+		top:-44px;
+		left:-101px;
+	}
+	#meal_time_label {
+		top:-35px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-71px;
+		left:77px;
+	}
+	#instructions_label {
+		top:-32px;
+		left:-249px;
+	}
+	#instructions {
+		top:-69px;
+		left:76px;
+	}
+	#addDishButton {
+		top:22px;
+		left:-65px;
+		position:relative;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 220px;
+		top: 31px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: 155px;
+		top: -36px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: 161px;
+		top:-35px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: 133px;
+		top: -33px;
+	}
+	#github {
+		font-size:11px;
+		left: -169px;
+		top: -4px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -163px;
+		top: -4px;
+	}
+	#resume {
+		font-size:11px;
+		left: -156px;
+		top: -4px;
+	}
+}
+
+
+
+@media screen and (max-width:338px) {
+	form {
+		left:22px;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: rgb(32,44,60);
+    	font-size: 28px;
+    	position: relative;
+    	left: 100px;
+    	padding-bottom: 40px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:9px;
+		top:37px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:0px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: antiquewhite;
+    	font-size: 28px;
+    	position: relative;
+    	left: 100px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#dish_name_label {
+		left:-83px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-98px;
+	}
+	#calories_label {
+		top:-48px;
+		left:-83px;
+	}
+	#calories {
+		top:-51px;
+		left:-65px;
+	}
+	#ingredients_label {
+		top:-40px;
+		left:-84px;
+	}
+	#ingredients {
+		top:-44px;
+		left:-101px;
+	}
+	#meal_time_label {
+		top:-35px;
+		left:-94px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-71px;
+		left:77px;
+	}
+	#instructions_label {
+		top:-32px;
+		left:-249px;
+	}
+	#instructions {
+		top:-69px;
+		left:76px;
+	}
+	#addDishButton {
+		top:22px;
+		left:-65px;
+		position:relative;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 220px;
+		top: 31px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: 155px;
+		top: -36px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: 161px;
+		top:-35px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: 133px;
+		top: -33px;
+	}
+	#github {
+		font-size:11px;
+		left: -169px;
+		top: -4px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -163px;
+		top: -4px;
+	}
+	#resume {
+		font-size:11px;
+		left: -156px;
+		top: -4px;
+	}
+}
+
+@media screen and (max-width:337px) {
+	form {
+		left:22px;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: rgb(32,44,60);
+    	font-size: 28px;
+    	position: relative;
+    	left: 100px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:9px;
+		top:37px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:0px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#addDishForm {
+		margin-top:0px;
+		margin-left:0px;
+		left:0;
+		color: antiquewhite;
+	}
+	#dish_name_label {
+		left:14px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-2px;
+	}
+	#calories_label {
+		top:-47px;
+		left:14px;
+	}
+	#calories {
+		top:-51px;
+		left:31px;
+	}
+	#ingredients_label {
+		top:-45px;
+		left:9px;
+	}
+	#ingredients {
+		top:-49px;
+		left:-6px;
+	}
+	#meal_time_label {
+		top:-41px;
+		left:5px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-77px;
+		left:171px;
+	}
+	#instructions_label {
+		top:-69px;
+		left:8px;
+	}
+	#instructions {
+		top:-104px;
+		left:171px;
+	}
+	#addDishButton {
+		top:-28px;
+		left:-51px;
+		position:relative;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 220px;
+		top: 31px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: 155px;
+		top: -36px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: 161px;
+		top:-35px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: 133px;
+		top: -33px;
+	}
+	#github {
+		font-size:11px;
+		left: -169px;
+		top: -4px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -163px;
+		top: -4px;
+	}
+	#resume {
+		font-size:11px;
+		left: -156px;
+		top: -4px;
+	}
+}
+
+@media screen and (max-width:330px) {
+	form {
+		left:22px;
+	}
+	#addDishForm {
+		font-family: Louis_George_Cafe;
+    	color: rgb(32,44,60);
+    	font-size: 28px;
+    	position: relative;
+    	left: 100px;
+    	padding-bottom: 40px;
+    	width:100%;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:9px;
+		top:37px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:5px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:0px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#addDishForm {
+		margin-top:0px;
+		margin-left:0px;
+		left:0;
+		color: antiquewhite;
+	}
+	#dish_name_label {
+		left:14px;
+		top:-54px;
+	}
+	#dish_name {
+		top:-57px;
+		left:-2px;
+	}
+	#calories_label {
+		top:-47px;
+		left:14px;
+	}
+	#calories {
+		top:-51px;
+		left:31px;
+	}
+	#ingredients_label {
+		top:-45px;
+		left:9px;
+	}
+	#ingredients {
+		top:-81px;
+		left:171px;
+	}
+	#meal_time_label {
+		top:-73px;
+		left:5px;
+		display:inherit;
+	}
+	#addDish_mealtime {
+		top:-109px;
+		left:171px;
+	}
+	#instructions_label {
+		top:-101px;
+		left:8px;
+	}
+	#instructions {
+		top:-136px;
+		left:170px;
+	}
+	#addDishButton {
+		top:-60px;
+		left:-51px;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 220px;
+		top: 31px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: 155px;
+		top: -36px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: 161px;
+		top:-35px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: 133px;
+		top: -33px;
+	}
+	#github {
+		font-size:11px;
+		left: -169px;
+		top: -4px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -163px;
+		top: -4px;
+	}
+	#resume {
+		font-size:11px;
+		left: -156px;
+		top: -4px;
+	}
+}
